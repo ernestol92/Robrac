@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça a fábrica da Robrac: máquinas de última geração, processo de produção, controle de qualidade e práticas sustentáveis.">
+  <meta name="keywords" content="fábrica sublimação, máquinas impressão, controle qualidade, sustentabilidade">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <title>Nossa Fábrica - Robrac | Estrutura e Tecnologia</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="container navbar__container">
+      <a href="index.html" class="navbar__logo" aria-label="Robrac - Página inicial">
+        <div class="navbar__logo-icon">R</div>
+        <span>Robrac</span>
+      </a>
+      
+      <ul class="navbar__menu" role="menubar">
+        <li role="none"><a href="index.html" class="navbar__link" role="menuitem">Início</a></li>
+        <li role="none"><a href="produtos.html" class="navbar__link" role="menuitem">Produtos</a></li>
+        <li role="none"><a href="materiais.html" class="navbar__link" role="menuitem">Materiais</a></li>
+        <li role="none"><a href="servicos.html" class="navbar__link" role="menuitem">Serviços</a></li>
+        <li role="none"><a href="fabrica.html" class="navbar__link active" role="menuitem">Fábrica</a></li>
+        <li role="none"><a href="sobre.html" class="navbar__link" role="menuitem">Sobre Nós</a></li>
+        <li role="none"><a href="contato.html" class="navbar__link" role="menuitem">Contato</a></li>
+      </ul>
+      
+      <div class="navbar__actions">
+        <button class="theme-toggle" aria-label="Alternar tema">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="contato.html" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+        <button class="navbar__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header pattern-bg">
+    <div class="pattern-lines"></div>
+    <div class="container">
+      <div class="page-header__content">
+        <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Início</a>
+          <span>/</span>
+          <span>Fábrica</span>
+        </nav>
+        <h1 class="page-header__title">Nossa Fábrica</h1>
+        <p class="page-header__description">
+          Conheça os bastidores da Robrac. Nossa estrutura, equipamentos e processos que garantem a qualidade em cada produto.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-header__label">Bastidores</span>
+        <h2 class="section-header__title">Galeria da Fábrica</h2>
+        <p class="section-header__description">
+          Veja nossa estrutura e equipe em ação.
+        </p>
+      </div>
+      
+      <div class="factory-gallery stagger-children">
+        <div class="gallery-item">
+          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%); display: flex; align-items: center; justify-content: center;">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" opacity="0.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__caption">Área de Impressão</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1a7dd6 0%, #4da6ff 100%); display: flex; align-items: center; justify-content: center;">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" opacity="0.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__caption">Prensas Térmicas</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--color-accent-dark) 0%, var(--color-accent) 100%); display: flex; align-items: center; justify-content: center;">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" opacity="0.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__caption">Área de Corte</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #059669 0%, #10b981 100%); display: flex; align-items: center; justify-content: center;">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" opacity="0.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__caption">Controle de Qualidade</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); display: flex; align-items: center; justify-content: center;">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" opacity="0.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__caption">Expedição</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #dc2626 0%, #f87171 100%); display: flex; align-items: center; justify-content: center;">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" opacity="0.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__caption">Nossa Equipe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Machines Section -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-header__label">Equipamentos</span>
+        <h2 class="section-header__title">Máquinas de Última Geração</h2>
+        <p class="section-header__description">
+          Investimos constantemente em tecnologia para garantir a melhor qualidade.
+        </p>
+      </div>
+      
+      <div class="grid grid-3 gap-xl stagger-children">
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"/>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+              <rect x="6" y="14" width="12" height="8"/>
+            </svg>
+          </div>
+          <h4 class="card__title">Impressoras de Grande Formato</h4>
+          <p class="card__description">Impressoras digitais de alta velocidade com tecnologia de ponta para sublimação, garantindo cores vibrantes e definição excepcional.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <line x1="3" y1="9" x2="21" y2="9"/>
+              <line x1="9" y1="21" x2="9" y2="9"/>
+            </svg>
+          </div>
+          <h4 class="card__title">Prensas Térmicas</h4>
+          <p class="card__description">Múltiplas prensas planas e cilíndricas com controle digital de temperatura e tempo para transferência perfeita em diversos substratos.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="6" cy="6" r="3"/>
+              <circle cx="6" cy="18" r="3"/>
+              <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+              <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+              <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h4 class="card__title">Máquinas de Corte</h4>
+          <p class="card__description">Plotters de corte computadorizados para moldes precisos e acabamento impecável em todas as peças produzidas.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h4 class="card__title">Máquinas de Costura</h4>
+          <p class="card__description">Máquinas industriais de costura reta, overloque e galoneira para confecção completa das peças com acabamento profissional.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h4 class="card__title">Bordadeiras</h4>
+          <p class="card__description">Máquinas de bordado computadorizado para personalização adicional com logos e detalhes em alto relevo.</p>
+        </div>
+        
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+              <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/>
+            </svg>
+          </div>
+          <h4 class="card__title">Prensas para Canecas</h4>
+          <p class="card__description">Prensas especializadas para sublimação em superfícies cilíndricas com controle preciso de temperatura.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-header__label">Processo</span>
+        <h2 class="section-header__title">Fluxo de Produção</h2>
+        <p class="section-header__description">
+          Cada etapa é cuidadosamente executada para garantir a qualidade final.
+        </p>
+      </div>
+      
+      <div class="workflow stagger-children">
+        <div class="workflow__step">
+          <h4 style="margin-bottom: var(--space-sm);">Recebimento do Pedido</h4>
+          <p style="font-size: var(--text-sm); color: var(--text-secondary);">
+            A arte é verificada, ajustada se necessário, e preparada para impressão no sistema de gerenciamento de produção.
+          </p>
+        </div>
+        
+        <div class="workflow__step">
+          <h4 style="margin-bottom: var(--space-sm);">Impressão Digital</h4>
+          <p style="font-size: var(--text-sm); color: var(--text-secondary);">
+            A arte é impressa em papel sublimático de alta qualidade com tintas especiais que garantem cores vibrantes.
+          </p>
+        </div>
+        
+        <div class="workflow__step">
+          <h4 style="margin-bottom: var(--space-sm);">Corte do Tecido</h4>
+          <p style="font-size: var(--text-sm); color: var(--text-secondary);">
+            Os moldes são cortados com precisão milimétrica em máquinas computadorizadas seguindo as especificações do pedido.
+          </p>
+        </div>
+        
+        <div class="workflow__step">
+          <h4 style="margin-bottom: var(--space-sm);">Sublimação</h4>
+          <p style="font-size: var(--text-sm); color: var(--text-secondary);">
+            O papel impresso é posicionado sobre o tecido e prensado a alta temperatura, transferindo a tinta para as fibras.
+          </p>
+        </div>
+        
+        <div class="workflow__step">
+          <h4 style="margin-bottom: var(--space-sm);">Confecção</h4>
+          <p style="font-size: var(--text-sm); color: var(--text-secondary);">
+            As peças são costuradas por nossa equipe de costureiras experientes, seguindo padrões rigorosos de qualidade.
+          </p>
+        </div>
+        
+        <div class="workflow__step">
+          <h4 style="margin-bottom: var(--space-sm);">Inspeção Final</h4>
+          <p style="font-size: var(--text-sm); color: var(--text-secondary);">
+            Cada peça é inspecionada individualmente verificando cores, costuras e acabamentos antes da embalagem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Control -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="grid grid-2 gap-xl" style="align-items: center;">
+        <div class="animate-on-scroll">
+          <span class="section-header__label">Controle de Qualidade</span>
+          <h2 style="margin-bottom: var(--space-md);">Qualidade em Cada Detalhe</h2>
+          <p style="margin-bottom: var(--space-lg);">
+            Nosso processo de controle de qualidade garante que 100% das peças atendam aos nossos padrões antes de chegar até você.
+          </p>
+          <ul style="color: var(--text-secondary); font-size: var(--text-sm);">
+            <li style="display: flex; align-items: flex-start; gap: var(--space-sm); margin-bottom: var(--space-md);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Verificação de cores:</strong> Comparamos cada impressão com padrões de referência para garantir fidelidade cromática.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: var(--space-sm); margin-bottom: var(--space-md);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Inspeção de costuras:</strong> Todas as costuras são verificadas quanto à resistência e acabamento.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: var(--space-sm); margin-bottom: var(--space-md);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Conferência de medidas:</strong> Tamanhos são verificados com gabarito padrão.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: var(--space-sm); margin-bottom: var(--space-md);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Teste de aderência:</strong> Verificamos a fixação da tinta no substrato.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="animate-on-scroll" style="background: var(--bg-tertiary); border-radius: var(--radius-xl); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;">
+          <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1" opacity="0.5">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sustainability -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-header__label">Sustentabilidade</span>
+        <h2 class="section-header__title">Compromisso Ambiental</h2>
+        <p class="section-header__description">
+          Adotamos práticas sustentáveis em nossos processos de produção.
+        </p>
+      </div>
+      
+      <div class="grid grid-3 gap-xl stagger-children">
+        <div class="card text-center">
+          <div class="card__icon" style="margin: 0 auto var(--space-lg); background: linear-gradient(135deg, #059669, #10b981);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+            </svg>
+          </div>
+          <h4 class="card__title">Tintas Eco-Friendly</h4>
+          <p class="card__description">Utilizamos tintas à base de água, sem solventes tóxicos, que são seguras para o meio ambiente e para os usuários.</p>
+        </div>
+        
+        <div class="card text-center">
+          <div class="card__icon" style="margin: 0 auto var(--space-lg); background: linear-gradient(135deg, #059669, #10b981);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
+              <polyline points="7.5 19.79 7.5 14.6 3 12"/>
+              <polyline points="21 12 16.5 14.6 16.5 19.79"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h4 class="card__title">Zero Desperdício de Água</h4>
+          <p class="card__description">O processo de sublimação não gera efluentes líquidos, eliminando a poluição de recursos hídricos.</p>
+        </div>
+        
+        <div class="card text-center">
+          <div class="card__icon" style="margin: 0 auto var(--space-lg); background: linear-gradient(135deg, #059669, #10b981);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="4 17 10 11 4 5"/>
+              <line x1="12" y1="19" x2="20" y2="19"/>
+            </svg>
+          </div>
+          <h4 class="card__title">Otimização de Recursos</h4>
+          <p class="card__description">Maximizamos o aproveitamento de tecidos e papéis, minimizando resíduos através de corte inteligente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-header__label">FAQ</span>
+        <h2 class="section-header__title">Dúvidas sobre a Fábrica</h2>
+      </div>
+      
+      <div class="faq animate-on-scroll">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Quais máquinas vocês utilizam na produção?</span>
+            <span class="faq__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Utilizamos impressoras digitais de grande formato para sublimação, múltiplas prensas térmicas (planas e cilíndricas), plotters de corte computadorizados, máquinas de costura industriais (reta, overloque e galoneira), bordadeiras computadorizadas e prensas especiais para canecas e outros substratos.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Como vocês garantem a consistência da qualidade?</span>
+            <span class="faq__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Mantemos padrões rigorosos em todas as etapas: calibração regular das impressoras e prensas, uso de materiais de fornecedores certificados, controle de temperatura e tempo precisos no processo de sublimação, e inspeção individual de 100% das peças antes da embalagem. Isso garante uniformidade mesmo em pedidos de milhares de unidades.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Qual a capacidade de produção diária?</span>
+            <span class="faq__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Nossa capacidade produtiva atual permite a fabricação de mais de 1.000 peças por dia em operação normal. Em períodos de alta demanda, podemos expandir a capacidade com turnos extras. A capacidade exata depende do tipo de produto e complexidade do projeto.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>É possível visitar a fábrica?</span>
+            <span class="faq__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Sim! Recebemos visitas de clientes e parceiros mediante agendamento prévio. É uma ótima oportunidade para conhecer nossos processos, equipamentos e equipe pessoalmente. Entre em contato para agendar sua visita à nossa fábrica em Santana do Ipanema.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);">
+    <div class="container text-center">
+      <h2 style="color: white; margin-bottom: var(--space-md);">Quer Conhecer Nossa Fábrica?</h2>
+      <p style="color: rgba(255,255,255,0.9); margin-bottom: var(--space-xl); max-width: 600px; margin-left: auto; margin-right: auto;">
+        Agende uma visita e conheça de perto nossa estrutura e processos de produção.
+      </p>
+      <a href="contato.html" class="btn btn--accent btn--lg">
+        Agendar Visita
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <div class="navbar__logo-icon">R</div>
+            <span>Robrac</span>
+          </a>
+          <p class="footer__description">
+            Fabricação de sublimação em alto volume com qualidade incomparável. Transformando ideias em produtos desde 2004.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/robracuniformes/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/558299848123" target="_blank" rel="noopener" class="footer__social-link" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer__column">
+          <h5>Navegação</h5>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Início</a></li>
+            <li><a href="produtos.html" class="footer__link">Produtos</a></li>
+            <li><a href="materiais.html" class="footer__link">Materiais</a></li>
+            <li><a href="servicos.html" class="footer__link">Serviços</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h5>Empresa</h5>
+          <ul class="footer__links">
+            <li><a href="fabrica.html" class="footer__link">Nossa Fábrica</a></li>
+            <li><a href="sobre.html" class="footer__link">Sobre Nós</a></li>
+            <li><a href="contato.html" class="footer__link">Contato</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h5>Contato</h5>
+          <ul class="footer__links">
+            <li class="footer__link">Santana do Ipanema - AL</li>
+            <li class="footer__link">+55 82 9984-8123</li>
+            <li><a href="mailto:contato@robrac.com.br" class="footer__link">contato@robrac.com.br</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2024 Robrac. Todos os direitos reservados.
+        </p>
+        <p class="footer__made-by">
+          Desenvolvido por <a href="#">SUBMAX</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/558299848123" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Contato via WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+

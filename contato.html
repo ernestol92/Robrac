@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a Robrac: formulário, WhatsApp, telefone, email e localização. Solicite seu orçamento de sublimação.">
+  <meta name="keywords" content="contato Robrac, orçamento sublimação, WhatsApp, telefone, email">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <title>Contato - Robrac | Solicite seu Orçamento</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="container navbar__container">
+      <a href="index.html" class="navbar__logo" aria-label="Robrac - Página inicial">
+        <div class="navbar__logo-icon">R</div>
+        <span>Robrac</span>
+      </a>
+      
+      <ul class="navbar__menu" role="menubar">
+        <li role="none"><a href="index.html" class="navbar__link" role="menuitem">Início</a></li>
+        <li role="none"><a href="produtos.html" class="navbar__link" role="menuitem">Produtos</a></li>
+        <li role="none"><a href="materiais.html" class="navbar__link" role="menuitem">Materiais</a></li>
+        <li role="none"><a href="servicos.html" class="navbar__link" role="menuitem">Serviços</a></li>
+        <li role="none"><a href="fabrica.html" class="navbar__link" role="menuitem">Fábrica</a></li>
+        <li role="none"><a href="sobre.html" class="navbar__link" role="menuitem">Sobre Nós</a></li>
+        <li role="none"><a href="contato.html" class="navbar__link active" role="menuitem">Contato</a></li>
+      </ul>
+      
+      <div class="navbar__actions">
+        <button class="theme-toggle" aria-label="Alternar tema">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="contato.html" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+        <button class="navbar__toggle" aria-label="Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header pattern-bg">
+    <div class="pattern-lines"></div>
+    <div class="container">
+      <div class="page-header__content">
+        <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Início</a>
+          <span>/</span>
+          <span>Contato</span>
+        </nav>
+        <h1 class="page-header__title">Entre em Contato</h1>
+        <p class="page-header__description">
+          Estamos prontos para atender você. Solicite seu orçamento ou tire suas dúvidas através dos nossos canais de atendimento.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2 gap-xl">
+        
+        <!-- Contact Form -->
+        <div class="animate-on-scroll">
+          <h2 style="margin-bottom: var(--space-lg);">Envie uma Mensagem</h2>
+          <form class="form contact-form">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Nome Completo *</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Seu nome" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="company">Empresa</label>
+                <input type="text" id="company" name="company" class="form__input" placeholder="Nome da empresa">
+              </div>
+            </div>
+            
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="email">E-mail *</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="phone">Telefone/WhatsApp *</label>
+                <input type="tel" id="phone" name="phone" class="form__input" placeholder="(00) 00000-0000" required>
+              </div>
+            </div>
+            
+            <div class="form__group">
+              <label class="form__label" for="subject">Assunto *</label>
+              <select id="subject" name="subject" class="form__select" required>
+                <option value="">Selecione o assunto</option>
+                <option value="orcamento">Solicitar Orçamento</option>
+                <option value="duvida">Dúvidas sobre Produtos</option>
+                <option value="parceria">Parceria Comercial</option>
+                <option value="suporte">Suporte / Pós-venda</option>
+                <option value="visita">Agendar Visita</option>
+                <option value="outro">Outro Assunto</option>
+              </select>
+            </div>
+            
+            <div class="form__group">
+              <label class="form__label" for="product">Produto de Interesse</label>
+              <select id="product" name="product" class="form__select">
+                <option value="">Selecione o produto (opcional)</option>
+                <option value="camisetas">Camisetas Personalizadas</option>
+                <option value="uniformes">Uniformes Empresariais</option>
+                <option value="esportivos">Artigos Esportivos</option>
+                <option value="canecas">Canecas e Copos</option>
+                <option value="neoprene">Produtos em Neoprene</option>
+                <option value="brindes">Brindes Corporativos</option>
+                <option value="varios">Vários Produtos</option>
+              </select>
+            </div>
+            
+            <div class="form__group">
+              <label class="form__label" for="quantity">Quantidade Estimada</label>
+              <select id="quantity" name="quantity" class="form__select">
+                <option value="">Selecione a quantidade (opcional)</option>
+                <option value="10-50">10 a 50 peças</option>
+                <option value="50-100">50 a 100 peças</option>
+                <option value="100-500">100 a 500 peças</option>
+                <option value="500-1000">500 a 1.000 peças</option>
+                <option value="1000+">Mais de 1.000 peças</option>
+              </select>
+            </div>
+            
+            <div class="form__group">
+              <label class="form__label" for="message">Mensagem *</label>
+              <textarea id="message" name="message" class="form__textarea" placeholder="Descreva seu projeto ou dúvida..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="animate-on-scroll">
+          <h2 style="margin-bottom: var(--space-lg);">Informações de Contato</h2>
+          
+          <div class="contact-info">
+            <!-- WhatsApp -->
+            <div class="contact-info__item">
+              <div class="contact-info__icon" style="background: #25D366; color: white;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-info__label">WhatsApp (mais rápido)</p>
+                <p class="contact-info__value">
+                  <a href="https://wa.me/558299848123" target="_blank" rel="noopener" style="color: var(--color-primary);">
+                    (82) 9984-8123
+                  </a>
+                </p>
+              </div>
+            </div>
+            
+            <!-- Instagram -->
+            <div class="contact-info__item">
+              <div class="contact-info__icon" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-info__label">Instagram</p>
+                <p class="contact-info__value">
+                  <a href="https://www.instagram.com/robracuniformes/" target="_blank" rel="noopener" style="color: var(--color-primary);">
+                    @robracuniformes
+                  </a>
+                </p>
+              </div>
+            </div>
+            
+            <!-- Phone -->
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-info__label">Telefone</p>
+                <p class="contact-info__value">(82) 9984-8123</p>
+              </div>
+            </div>
+            
+            <!-- Email -->
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-info__label">E-mail</p>
+                <p class="contact-info__value">
+                  <a href="mailto:contato@robrac.com.br" style="color: var(--color-primary);">
+                    contato@robrac.com.br
+                  </a>
+                </p>
+              </div>
+            </div>
+            
+            <!-- Address -->
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-info__label">Endereço</p>
+                <p class="contact-info__value">Santana do Ipanema - AL<br>Brasil</p>
+              </div>
+            </div>
+            
+            <!-- Hours -->
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-info__label">Horário de Atendimento</p>
+                <p class="contact-info__value">
+                  Segunda a Sexta: 8h às 18h<br>
+                  Sábado: 8h às 12h
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Quick Actions -->
+          <div style="margin-top: var(--space-2xl);">
+            <h3 style="margin-bottom: var(--space-md); font-size: var(--text-lg);">Atendimento Rápido</h3>
+            <div class="flex flex-wrap gap-md">
+              <a href="https://wa.me/558299848123" target="_blank" rel="noopener" class="btn btn--lg" style="background: #25D366; color: white; flex: 1; min-width: 200px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp
+              </a>
+              <a href="https://www.instagram.com/robracuniformes/" target="_blank" rel="noopener" class="btn btn--lg" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; flex: 1; min-width: 200px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-header__label">Localização</span>
+        <h2 class="section-header__title">Nossa Localização</h2>
+        <p class="section-header__description">
+          Estamos localizados em Santana do Ipanema, Alagoas.
+        </p>
+      </div>
+      
+      <div class="map-container animate-on-scroll">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31434.066777668367!2d-37.26306!3d-9.378889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a81f5c7e1c8d9f%3A0x4c7b4c0df5ed5e0!2sSantana%20do%20Ipanema%2C%20AL!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização da Robrac em Santana do Ipanema">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-header__label">FAQ</span>
+        <h2 class="section-header__title">Dúvidas sobre Contato</h2>
+      </div>
+      
+      <div class="faq animate-on-scroll">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Qual o tempo de resposta para solicitações?</span>
+            <span class="faq__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Nosso compromisso é responder todas as solicitações em até 24 horas em dias úteis. Mensagens enviadas por WhatsApp geralmente são respondidas em poucos minutos durante o horário comercial. Para orçamentos mais complexos que exigem análise detalhada, podemos levar até 48 horas para enviar uma proposta completa.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>É possível retirar os produtos na fábrica?</span>
+            <span class="faq__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Sim! Clientes da região podem optar pela retirada dos produtos diretamente em nossa fábrica em Santana do Ipanema. A retirada deve ser agendada previamente para garantir que o pedido esteja pronto e disponível. Essa opção elimina o custo de frete e é uma ótima oportunidade para conhecer nossas instalações.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Qual o melhor canal para pedidos urgentes?</span>
+            <span class="faq__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Para pedidos urgentes, o WhatsApp é o canal mais rápido. Nossa equipe monitora constantemente as mensagens durante o horário comercial e pode verificar imediatamente a disponibilidade de produção para atender seu prazo. Ao entrar em contato, informe claramente que se trata de um pedido urgente e a data limite que você precisa.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Vocês atendem aos finais de semana?</span>
+            <span class="faq__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Nosso atendimento comercial funciona de segunda a sexta das 8h às 18h e aos sábados das 8h às 12h. Aos domingos e feriados não há atendimento. Você pode enviar mensagens a qualquer momento pelo formulário ou WhatsApp, e responderemos assim que retornarmos ao expediente.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Como acompanho o status do meu pedido?</span>
+            <span class="faq__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Após a confirmação do pedido, você receberá atualizações sobre o andamento da produção por WhatsApp ou e-mail. Quando o pedido for despachado, enviaremos o código de rastreamento para acompanhamento da entrega. Você também pode solicitar informações sobre o status do pedido a qualquer momento através dos nossos canais de atendimento.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <div class="navbar__logo-icon">R</div>
+            <span>Robrac</span>
+          </a>
+          <p class="footer__description">
+            Fabricação de sublimação em alto volume com qualidade incomparável. Transformando ideias em produtos desde 2004.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/robracuniformes/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/558299848123" target="_blank" rel="noopener" class="footer__social-link" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer__column">
+          <h5>Navegação</h5>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Início</a></li>
+            <li><a href="produtos.html" class="footer__link">Produtos</a></li>
+            <li><a href="materiais.html" class="footer__link">Materiais</a></li>
+            <li><a href="servicos.html" class="footer__link">Serviços</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h5>Empresa</h5>
+          <ul class="footer__links">
+            <li><a href="fabrica.html" class="footer__link">Nossa Fábrica</a></li>
+            <li><a href="sobre.html" class="footer__link">Sobre Nós</a></li>
+            <li><a href="contato.html" class="footer__link">Contato</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h5>Contato</h5>
+          <ul class="footer__links">
+            <li class="footer__link">Santana do Ipanema - AL</li>
+            <li class="footer__link">+55 82 9984-8123</li>
+            <li><a href="mailto:contato@robrac.com.br" class="footer__link">contato@robrac.com.br</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2024 Robrac. Todos os direitos reservados.
+        </p>
+        <p class="footer__made-by">
+          Desenvolvido por <a href="#">SUBMAX</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/558299848123" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Contato via WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
