@@ -4,6 +4,11 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
+   Font Import
+   -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* --------------------------------------------------------------------------
    CSS Custom Properties (Design Tokens)
    -------------------------------------------------------------------------- */
 :root {
@@ -426,6 +431,11 @@ p {
   .navbar__toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
+
+  /* Hide "Solicitar Orçamento" button on mobile */
+  .navbar__actions .btn--primary {
+    display: none;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -563,6 +573,7 @@ p {
   position: relative;
   z-index: 1;
   max-width: 800px;
+  padding: 2rem;
 }
 
 .hero__badge {
@@ -621,6 +632,16 @@ p {
   border-radius: var(--radius-2xl);
   opacity: 0.1;
   z-index: 0;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
 }
 
 .hero__decoration::before {
