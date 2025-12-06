@@ -690,6 +690,10 @@ p {
   margin: 0 auto var(--space-3xl);
 }
 
+.pt-6 {
+  padding-top: 6rem;
+}
+
 .section-header__label {
   display: inline-block;
   font-size: var(--text-xs);
@@ -947,15 +951,23 @@ p {
 }
 
 .client-logo {
-  opacity: 0.5;
-  filter: grayscale(100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
   transition: all var(--transition-fast);
   padding: var(--space-md);
 }
 
 .client-logo:hover {
-  opacity: 1;
-  filter: grayscale(0%);
+  transform: translateY(-4px);
+}
+
+.client-logo__name {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  text-align: center;
+  font-weight: 500;
 }
 
 /* --------------------------------------------------------------------------
