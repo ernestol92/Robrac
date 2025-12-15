@@ -1070,6 +1070,13 @@ p {
   box-shadow: 0 0 0 3px rgba(0, 91, 187, 0.15);
 }
 
+.form__input.error,
+.form__textarea.error,
+.form__select.error {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
 .form__textarea {
   min-height: 150px;
   resize: vertical;
@@ -1279,6 +1286,22 @@ p {
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+  vertical-align: middle;
+  margin-right: var(--space-sm);
 }
 
 @keyframes slideIn {

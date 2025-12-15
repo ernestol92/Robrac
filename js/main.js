@@ -210,17 +210,22 @@ function initProductCards() {
 }
 
 /* --------------------------------------------------------------------------
-   Contact Form
+   Contact Form (FormSubmit.co Integration)
    -------------------------------------------------------------------------- */
 function initContactForm() {
   const form = document.querySelector('.contact-form');
   
+  // Check if returning from successful FormSubmit submission
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('enviado') === 'true') {
+    showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+    // Clean URL without refreshing
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+  
   if (form) {
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
+    form.addEventListener('submit', (e) => {
       const submitBtn = form.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
       
       // Simple validation
       const requiredFields = form.querySelectorAll('[required]');
@@ -236,6 +241,7 @@ function initContactForm() {
       });
       
       if (!isValid) {
+        e.preventDefault();
         showNotification('Por favor, preencha todos os campos obrigatórios.', 'error');
         return;
       }
@@ -243,27 +249,15 @@ function initContactForm() {
       // Email validation
       const emailField = form.querySelector('input[type="email"]');
       if (emailField && !isValidEmail(emailField.value)) {
+        e.preventDefault();
         showNotification('Por favor, insira um email válido.', 'error');
         emailField.classList.add('error');
         return;
       }
       
-      // Show loading state
+      // Show loading state - form will submit to FormSubmit.co
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Enviando...';
-      
-      // Simulate form submission (replace with actual submission logic)
-      try {
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        
-        showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
-        form.reset();
-      } catch (error) {
-        showNotification('Erro ao enviar mensagem. Tente novamente.', 'error');
-      } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
-      }
+      submitBtn.innerHTML = '<span class="spinner"></span> Enviando...';
     });
     
     // Remove error class on input
@@ -452,4 +446,5 @@ if ('requestIdleCallback' in window) {
     });
   });
 }
+
 

@@ -84,71 +84,74 @@
         <!-- Contact Form -->
         <div class="animate-on-scroll">
           <h2 style="margin-bottom: var(--space-lg);">Envie uma Mensagem</h2>
-          <form class="form contact-form">
+          <form class="form contact-form" action="https://formsubmit.co/ernestol92@hotmail.com" method="POST">
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_subject" value="Nova Mensagem do Site Robrac">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://robrac.com.br/contato.html?enviado=true">
+            
             <div class="form__row">
               <div class="form__group">
                 <label class="form__label" for="name">Nome Completo *</label>
-                <input type="text" id="name" name="name" class="form__input" placeholder="Seu nome" required>
+                <input type="text" id="name" name="Nome Completo" class="form__input" placeholder="Seu nome" required>
               </div>
               <div class="form__group">
                 <label class="form__label" for="company">Empresa</label>
-                <input type="text" id="company" name="company" class="form__input" placeholder="Nome da empresa">
+                <input type="text" id="company" name="Empresa" class="form__input" placeholder="Nome da empresa">
               </div>
             </div>
             
             <div class="form__row">
               <div class="form__group">
                 <label class="form__label" for="email">E-mail *</label>
-                <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required>
+                <input type="email" id="email" name="E-mail" class="form__input" placeholder="seu@email.com" required>
               </div>
               <div class="form__group">
                 <label class="form__label" for="phone">Telefone/WhatsApp *</label>
-                <input type="tel" id="phone" name="phone" class="form__input" placeholder="(00) 00000-0000" required>
+                <input type="tel" id="phone" name="Telefone/WhatsApp" class="form__input" placeholder="(00) 00000-0000" required>
               </div>
             </div>
             
             <div class="form__group">
               <label class="form__label" for="subject">Assunto *</label>
-              <select id="subject" name="subject" class="form__select" required>
+              <select id="subject" name="Assunto" class="form__select" required>
                 <option value="">Selecione o assunto</option>
-                <option value="orcamento">Solicitar Orçamento</option>
-                <option value="duvida">Dúvidas sobre Produtos</option>
-                <option value="parceria">Parceria Comercial</option>
-                <option value="suporte">Suporte / Pós-venda</option>
-                <option value="visita">Agendar Visita</option>
-                <option value="outro">Outro Assunto</option>
+                <option value="Solicitar Orçamento">Solicitar Orçamento</option>
+                <option value="Dúvidas sobre Produtos">Dúvidas sobre Produtos</option>
+                <option value="Parceria Comercial">Parceria Comercial</option>
+                <option value="Suporte / Pós-venda">Suporte / Pós-venda</option>
+                <option value="Agendar Visita">Agendar Visita</option>
+                <option value="Outro Assunto">Outro Assunto</option>
               </select>
             </div>
             
             <div class="form__group">
               <label class="form__label" for="product">Produto de Interesse</label>
-              <select id="product" name="product" class="form__select">
+              <select id="product" name="Produto de Interesse" class="form__select">
                 <option value="">Selecione o produto (opcional)</option>
-                <option value="camisetas">Camisetas Personalizadas</option>
-                <option value="uniformes">Uniformes Empresariais</option>
-                <option value="esportivos">Artigos Esportivos</option>
-                <option value="canecas">Canecas e Copos</option>
-                <option value="neoprene">Produtos em Neoprene</option>
-                <option value="brindes">Brindes Corporativos</option>
-                <option value="varios">Vários Produtos</option>
+                <option value="Camisetas Personalizadas">Camisetas Personalizadas</option>
+                <option value="Uniformes Empresariais">Uniformes Empresariais</option>
+                <option value="Artigos Esportivos">Artigos Esportivos</option>
+                <option value="Vários Produtos">Vários Produtos</option>
               </select>
             </div>
             
             <div class="form__group">
               <label class="form__label" for="quantity">Quantidade Estimada</label>
-              <select id="quantity" name="quantity" class="form__select">
+              <select id="quantity" name="Quantidade Estimada" class="form__select">
                 <option value="">Selecione a quantidade (opcional)</option>
-                <option value="10-50">10 a 50 peças</option>
-                <option value="50-100">50 a 100 peças</option>
-                <option value="100-500">100 a 500 peças</option>
-                <option value="500-1000">500 a 1.000 peças</option>
-                <option value="1000+">Mais de 1.000 peças</option>
+                <option value="10 a 50 peças">10 a 50 peças</option>
+                <option value="50 a 100 peças">50 a 100 peças</option>
+                <option value="100 a 500 peças">100 a 500 peças</option>
+                <option value="500 a 1.000 peças">500 a 1.000 peças</option>
+                <option value="Mais de 1.000 peças">Mais de 1.000 peças</option>
               </select>
             </div>
             
             <div class="form__group">
               <label class="form__label" for="message">Mensagem *</label>
-              <textarea id="message" name="message" class="form__textarea" placeholder="Descreva seu projeto ou dúvida..." required></textarea>
+              <textarea id="message" name="Mensagem" class="form__textarea" placeholder="Descreva seu projeto ou dúvida..." required></textarea>
             </div>
             
             <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
@@ -493,4 +496,5 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
 
